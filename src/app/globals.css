@@ -71,6 +71,6 @@
       @apply border-border;
     }
     body {
-      @apply bg-background dark:bg-black text-foreground;
+      @apply bg-background dark:bg-black/70 text-foreground;
     }
   }
