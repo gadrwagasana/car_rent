@@ -80,7 +80,7 @@
   @apply w-[8px] dark:bg-black/50  bg-white
 }
 ::-webkit-scrollbar-thumb{
-  @apply bg-emerald-500 dark:bg-emerald-900 rounded-md
+  @apply bg-success rounded-md ;
 }
 
 /* animation */

@@ -12,7 +12,7 @@ import { cn } from '@/lib/utils';
 export const Site_navbar = () => {
   const scrolled = User_scroll_top_56();
   return (
-    <nav className={cn("flex  justify-between px-1 py-1 lg:px-2 border-b border-emerald-500  h-14 items-center" , scrolled && " fixed z-50 w-full backdrop-blur-md bg-white/50 dark:bg-black/50")}>
+    <nav className={cn("flex  justify-between px-1 py-1 lg:px-2  h-14 items-center" , scrolled && " fixed z-50 w-full backdrop-blur-md bg-white/50 dark:bg-black/50 border-b border-success")}>
         {/* logo */}
         <div className=' flex gap-6 items-center'>
           <Site_logo/>
