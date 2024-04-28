@@ -49,10 +49,10 @@ export const Site_popular_Car = () => {
                     <span className=' text-2xl font-bold font-mono capitalize text-white'>Toyota car</span>
                     <p className=' text-center text-gray-500'>In the navbar of your car rental and sales website, you can include the following sections to help users navigate the site easily.</p>
                     {/* amount */}
-                    <div className=' flex gap-4 items-center'>
+                    <div className=' flex gap-4 items-center text-black'>
                         {/* <span>5000</span> */}
                         <Link href={"/"} className={cn(Style_button() , " max-lg:w-52")}>{amount} Rwf</Link>
-                        <div className=' flex gap-3 items-center text-white'>
+                        <div className=' flex gap-3 items-center dark:text-white text-black'>
                             <span>{day}</span>
                             <span className=' capitalize text-lg'>day</span>
                             <button onClick={toggledDayIncrement} className={cn(Style_button({type : "icon"}))}>+</button>
