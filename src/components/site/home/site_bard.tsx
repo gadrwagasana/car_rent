@@ -54,11 +54,11 @@ export const Site_bard = () => {
                     <div onClick={() => setBigImage("/images/2.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/2.jpg" && "border-2 border-success rounded-box")}>
                         <Image priority className=' object-cover rounded-box'  fill src={"/images/2.jpg"} alt='product images'/>
                     </div>
-                    <div onClick={() => setBigImage("/images/7.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/1.jpg" && "border-2 border-success rounded-box")}>
+                    <div onClick={() => setBigImage("/images/7.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/7.jpg" && "border-2 border-success rounded-box")}>
                         <Image priority className=' object-cover rounded-box'  fill src={"/images/7.jpg"} alt='product images'/>
                     </div>
-                    <div onClick={() => setBigImage("/images/3.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/5.jpg" && "border-2 border-success rounded-box")}>
-                        <Image priority className=' object-cover rounded-box'  fill src={"/images/5.jpg"} alt='product images'/>
+                    <div onClick={() => setBigImage("/images/3.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/3.jpg" && "border-2 border-success rounded-box")}>
+                        <Image priority className=' object-cover rounded-box'  fill src={"/images/3.jpg"} alt='product images'/>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ export const Site_explore_car = () => {
         </div>
         <div className=' mt-3 space-x-2 grid max-lg:grid-cols-2 space-y-3 grid-cols-3'>
             {[...Array(6)].map((items, index ) => (
-                <Car_card key={index + 1} product_amount={5000} car_image={["/images/5.jpg" , "/images/1.jpg", "/images/4.jpg"]} profile_image='/images/2.jpg' profile_name='bruno rwanda'/>
+                <Car_card key={index + 1} product_amount={5000} car_image={["/images/5.jpg" , "/images/1.jpg", "/images/4.jpg"]} profile_image='/logo.png' profile_name='Rent car'/>
             ))}
         </div>
     </div>

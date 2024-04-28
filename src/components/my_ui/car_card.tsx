@@ -47,7 +47,7 @@ export const Car_card = ({car_image ,children, product_amount , profile_image , 
         </Link>
         <div className=' mt-2 space-y-2'>
             <Link href={"/profile"} className=' flex gap-4 items-center cursor-pointer'>
-                <div className=' relative size-10 rounded-full'><Image className=' rounded-full object-cover' fill priority src={profile_image} alt={cn("profile image for:" , )}/></div>
+                <div className=' relative size-10 mask mask-squircle'><Image className=' object-cover mask mask-squircle' fill priority src={profile_image} alt={cn("profile image for:" , )}/></div>
                 <span className=' text-xl font-mono font-semibold capitalize'>{profile_name}</span>
             </Link>
             {children  ?

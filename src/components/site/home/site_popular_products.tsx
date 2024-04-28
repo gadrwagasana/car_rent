@@ -23,7 +23,7 @@ export const Site_popular_Car = () => {
         }
     }
   return (
-    <div className='  bg-base-content relative rounded-box max-lg:mt-20'>
+    <div className='  bg-base-content  relative rounded-box max-lg:mt-20'>
         <div className=' absolute z-30 top-1/2 flex justify-between w-full'><ChevronLeft size={32} className=' hover:text-success duration-300 hover:scale-110 cursor-pointer' /> <ChevronRight size={32} className=' hover:text-success duration-300 hover:scale-110 cursor-pointer'/></div>
         <div className=' relative  h-80 w-full max-lg:h-full max-lg:bg-base-content'>
             {/* bg image */}
@@ -45,8 +45,8 @@ export const Site_popular_Car = () => {
                     </div>
                 </div>
                 {/* description */}
-                <div className=' h-full w-full bg-cover bg-base-100 rounded-r-md p-4 justify-center items-center flex flex-col gap-2'>
-                    <span className=' text-2xl font-bold font-mono capitalize text-white'>Toyota car</span>
+                <div className=' h-full w-full bg-cover bg-base-100 dark:bg-gray-900 rounded-r-md p-4 justify-center items-center flex flex-col gap-2'>
+                    <span className=' text-2xl font-bold font-mono capitalize dark:text-white text-black'>Toyota car</span>
                     <p className=' text-center text-gray-500'>In the navbar of your car rental and sales website, you can include the following sections to help users navigate the site easily.</p>
                     {/* amount */}
                     <div className=' flex gap-4 items-center text-black'>

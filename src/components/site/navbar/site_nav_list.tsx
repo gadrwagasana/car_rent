@@ -66,7 +66,7 @@ export function SiteNavList() {
         <NavigationMenuItem>
           <NavigationMenuTrigger className={cn(" btn btn-sm btn-ghost")}><Link href={"/cars"}>Rentals</Link></NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] z-50">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
@@ -99,7 +99,7 @@ export function SiteNavList() {
         <NavigationMenuItem>
           <NavigationMenuTrigger className = {cn(" btn btn-sm btn-ghost")}>Suppliers</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]  z-50">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
