@@ -30,7 +30,7 @@ export const Car_card = ({car_image ,children, product_amount , profile_image , 
         }
     }
   return (
-    <div className=' h-96 w-96 max-lg:w-full rounded-box shadow-lg bg-white dark:bg-base-300 p-2'>
+    <div className=' h-96 w-96 max-md:w-[300px] max-sm:w-60 max-lg:w-full rounded-box shadow-lg bg-white dark:bg-base-300 p-2'>
         {/* images */}
         <Link href={"/product"} className='  w-full h-1/2 carousel carousel-center rounded-box'>
             {car_image && (
@@ -55,7 +55,7 @@ export const Car_card = ({car_image ,children, product_amount , profile_image , 
             <div className=' flex gap-4 items-center justify-center mt-2'>
                 {/* <span>5000</span> */}
                 <Link href={"/"} className={cn(Style_button() , "")}>{amount} Rwf</Link>
-                <div className=' flex gap-3 items-center text-white'>
+                <div className=' flex gap-3 max-md:gap-1 items-center text-white'>
                     <span>{day}</span>
                     <span className=' capitalize text-lg'>day</span>
                     <button onClick={toggledDayIncrement} className={cn(Style_button({type : "icon"}))}>+</button>

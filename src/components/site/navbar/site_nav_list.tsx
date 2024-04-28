@@ -57,14 +57,14 @@ export function SiteNavList() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={cn(" btn btn-sm btn-ghost")}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className={cn(" btn btn-sm btn-ghost")}>Rentals</NavigationMenuTrigger>
+          <NavigationMenuTrigger className={cn(" btn btn-sm btn-ghost")}><Link href={"/cars"}>Rentals</Link></NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
