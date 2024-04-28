@@ -1,4 +1,5 @@
 import { SitHero } from "@/components/site/home/hero/hero";
+import { Site_bard } from "@/components/site/home/site_bard";
 import { Site_explore_car } from "@/components/site/home/site_explore_car";
 import { Site_popular_Car } from "@/components/site/home/site_popular_products";
 
@@ -10,6 +11,7 @@ const Home_page = () => {
       </div>
       <Site_popular_Car/>
       <Site_explore_car/>
+      <Site_bard/>
       <div className=" h-screen w-full">
         Other hello
       </div>

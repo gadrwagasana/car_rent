@@ -6,7 +6,7 @@ import React from 'react'
 export const Site_create_account = () => {
   return (
     <DropdownMenu>
-        <DropdownMenuTrigger className={cn(buttonVariants({variant : "secondary" }) , " bg-emerald-500 dark:hover:bg-emerald-700")}>Get start
+        <DropdownMenuTrigger className={cn(buttonVariants({variant : "secondary" }) , " bg-success duration-300 hover:bg-warning")}>Get start
         </DropdownMenuTrigger>
     </DropdownMenu>
   )

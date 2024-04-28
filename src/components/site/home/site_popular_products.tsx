@@ -9,16 +9,17 @@ import React, { useState } from 'react'
 
 export const Site_popular_Car = () => {
     let [day , setDay] = useState<number>(1);
+    const [big_image , setBig_image ] = useState("/images/5.jpg")
     const amount = 400000 * day;
 
     const toggledDayIncrement = () => {
         if (day >= 1 ) {
-            setDay (day ++);
+            setDay (day = day  + 1);
         }
     }
     const toggledDayDecrement = () => {
         if (day >= 1 ) {
-            setDay (day --);
+            setDay (day = day - 1);
         }
     }
   return (
@@ -31,7 +32,18 @@ export const Site_popular_Car = () => {
             {/* body */}
             <div className=' flex items-center pl-1 lg:pl-2 justify-between z-20 absolute w-full h-full gap-4'>
                 {/* image */}
-                <Image src={"/images/5.jpg"} height={520} width={520} priority className=' rounded-box' alt='car image'  />
+                <Link href={"/car"} className="w-3/5 h-72 relative ">
+                    <Image src={big_image} fill priority className=' rounded-box object-cover' alt='car image'  />
+                </Link>
+                {/* other images */}
+                <div className=' flex flex-col gap-2'>
+                    <div onClick={() => setBig_image("/images/5.jpg")} className={cn("relative size-36 cursor-pointer rounded-box" , big_image === "/images/5.jpg" && "border-2 border-success ")} >
+                        <Image src="/images/5.jpg" alt='image car' priority fill className=' object-cover rounded-box'/>
+                    </div>
+                    <div onClick={() => setBig_image("/images/1.jpg")} className={cn("relative size-36 cursor-pointer rounded-box" , big_image === "/images/1.jpg" && "border-2 border-success ")}>
+                        <Image src="/images/1.jpg" alt='image car' priority fill className=' object-cover rounded-box'/>
+                    </div>
+                </div>
                 {/* description */}
                 <div className=' h-full w-full bg-cover bg-base-100 rounded-r-md p-4 justify-center items-center flex flex-col gap-2'>
                     <span className=' text-2xl font-bold font-mono capitalize text-white'>Toyota car</span>

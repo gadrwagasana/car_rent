@@ -14,7 +14,7 @@ export const SitHero = () => {
         </p>
         {/* know more information */}
         <div className=' flex gap-12 mt-6'>
-          <Link href={"/register"} className=' button-animation btn btn-lg btn-success text-white shadow-lg shadow-success'>Create account <GoArrowUpRight size={20}/></Link>
+          <Link href={"/register"} className=' button-animation btn btn-lg btn-success text-white shadow-lg shadow-success group/account'>Create account <GoArrowUpRight className='group-hover/account:scale-110 duration-300' size={20}/></Link>
           <button className=' button-animation btn btn-lg btn-warning text-white shadow-lg shadow-warning'>Why Us <BsPlayCircleFill size={20}/></button>
         </div>
       </div>
