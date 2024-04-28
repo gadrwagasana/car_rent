@@ -12,10 +12,11 @@ interface Props {
     profile_name : string ;
     product_amount : number ;
     children ?: React.ReactNode;
+    className ?: string ;
 
 }
 
-export const Car_card = ({car_image ,children, product_amount , profile_image , profile_name} : Props) => {
+export const Car_card = ({car_image ,children, className, product_amount , profile_image , profile_name} : Props) => {
     let [day , setDay] = useState<number>(1);
     const amount = product_amount * day;
 
@@ -30,7 +31,7 @@ export const Car_card = ({car_image ,children, product_amount , profile_image , 
         }
     }
   return (
-    <blockquote className=' h-96 w-96 max-md:w-[300px] max-sm:w-60 max-lg:w-full rounded-box shadow-lg bg-white dark:bg-gray-950 p-2'>
+    <blockquote className={cn("h-96 w-96 max-md:w-[300px] max-sm:w-60 max-lg:w-full rounded-box shadow-lg bg-white dark:bg-gray-950 p-2", className)}>
         {/* images */}
         <Link href={"/product"} className='  w-full h-1/2 carousel carousel-center rounded-box'>
             {car_image && (
