@@ -19,8 +19,8 @@ export const SitHero = () => {
         </div>
       </div>
       {/* images */}
-      <div className=' relative h-96 w-1/2'>
-        <Image src={"/images/2.jpg"} fill className=' object-cover rounded-md' property='' alt='hero image'/>
+      <div className=' relative h-96 w-1/2 shadow-lg'>
+        <Image src={"/images/2.jpg"} fill className=' object-cover rounded-box shadow-lg' property='' alt='hero image'/>
       </div>
     </main>
   )
