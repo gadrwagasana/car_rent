@@ -97,7 +97,7 @@ export function SiteNavList() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className = {cn(" btn btn-sm btn-ghost")}>Sales</NavigationMenuTrigger>
+          <NavigationMenuTrigger className = {cn(" btn btn-sm btn-ghost")}>Suppliers</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (

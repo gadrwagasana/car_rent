@@ -30,7 +30,7 @@ export const Car_card = ({car_image ,children, product_amount , profile_image , 
         }
     }
   return (
-    <div className=' h-96 w-96 max-md:w-[300px] max-sm:w-60 max-lg:w-full rounded-box shadow-lg bg-white dark:bg-black/60 p-2'>
+    <blockquote className=' h-96 w-96 max-md:w-[300px] max-sm:w-60 max-lg:w-full rounded-box shadow-lg bg-white dark:bg-gray-950 p-2'>
         {/* images */}
         <Link href={"/product"} className='  w-full h-1/2 carousel carousel-center rounded-box'>
             {car_image && (
@@ -50,7 +50,14 @@ export const Car_card = ({car_image ,children, product_amount , profile_image , 
                 <div className=' relative size-10 rounded-full'><Image className=' rounded-full object-cover' fill priority src={profile_image} alt={cn("profile image for:" , )}/></div>
                 <span className=' text-xl font-mono font-semibold capitalize'>{profile_name}</span>
             </Link>
-            {children  ? children : <p className='text-gray-500 text-base'>Variable form <span>12<sup>th</sup> April 2024</span> up to <span>30<sup>th</sup> April 2024</span></p>}
+            {children  ?
+              children : 
+              <div className='text-gray-500 text-base grid grid-cols-2'>
+                <span><span>Brand :</span> Toyota</span>
+                <span><span>Fuel type :</span> Petrol</span>
+                <span className=' flex'><span>Year manufacture : </span> 2008</span>
+              </div>
+             }
             <div>
             <div className=' flex gap-4 items-center justify-center mt-2'>
                 {/* <span>5000</span> */}
@@ -64,6 +71,6 @@ export const Car_card = ({car_image ,children, product_amount , profile_image , 
             </div>
             </div>
         </div>
-    </div>
+    </blockquote>
   )
 }

@@ -8,7 +8,7 @@ import React, { useState } from 'react'
 import { GoArrowUpRight } from 'react-icons/go'
 
 export const Site_bard = () => {
-    const [bigImage , setBigImage] = useState("/images/5.jpg")
+    const [bigImage , setBigImage] = useState("/images/3.jpg")
   return (
     <div className=' flex flex-col'>
         <h2 className=' text-4xl capitalize font-semibold'>Choose <span className=' text-success'>brand</span></h2>
@@ -54,10 +54,10 @@ export const Site_bard = () => {
                     <div onClick={() => setBigImage("/images/2.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/2.jpg" && "border-2 border-success rounded-box")}>
                         <Image priority className=' object-cover rounded-box'  fill src={"/images/2.jpg"} alt='product images'/>
                     </div>
-                    <div onClick={() => setBigImage("/images/1.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/1.jpg" && "border-2 border-success rounded-box")}>
-                        <Image priority className=' object-cover rounded-box'  fill src={"/images/1.jpg"} alt='product images'/>
+                    <div onClick={() => setBigImage("/images/7.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/1.jpg" && "border-2 border-success rounded-box")}>
+                        <Image priority className=' object-cover rounded-box'  fill src={"/images/7.jpg"} alt='product images'/>
                     </div>
-                    <div onClick={() => setBigImage("/images/5.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/5.jpg" && "border-2 border-success rounded-box")}>
+                    <div onClick={() => setBigImage("/images/3.jpg")} className={cn(" relative size-52  cursor-pointer" , bigImage === "/images/5.jpg" && "border-2 border-success rounded-box")}>
                         <Image priority className=' object-cover rounded-box'  fill src={"/images/5.jpg"} alt='product images'/>
                     </div>
                 </div>
